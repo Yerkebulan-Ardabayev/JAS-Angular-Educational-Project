@@ -1,0 +1,14 @@
+<!-- <div style="width: 600px; margin: 0 auto; margin-top: 20px; margin-bottom: 20px">
+  <input (input)="onInputChange($event)" />
+  <button (click)="onButtonClick()">Click me</button>
+  <ul>
+    <li *ngFor="let character of characters" [ngStyle]="{ color: getCharColor(character) }">
+      {{ character?.name }}
+    </li>
+  </ul>
+</div> -->
+<mat-grid-list cols="4" rowHeight="550px">
+  <mat-grid-tile *ngFor="let character of characters">
+    <app-codeblock-box [character]="character"></app-codeblock-box>
+  </mat-grid-tile>
+</mat-grid-list>
