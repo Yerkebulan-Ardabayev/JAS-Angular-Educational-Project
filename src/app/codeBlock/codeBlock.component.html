@@ -15,3 +15,5 @@
     <app-codeblock-box [character]="character"></app-codeblock-box>
   </mat-grid-tile>
 </mat-grid-list>
+<mat-paginator [length]="totalLength"  color="warn" [pageSize]="20" (page)="setPage($event)" aria-label="Select page">
+</mat-paginator>
